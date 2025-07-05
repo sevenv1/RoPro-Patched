@@ -1,0 +1,72 @@
+FORMAT:
+
+line Number | file relative path
+
+code
+code
+code
+
+---------------------------------------------------------------------------
+
+line 1876 | background.js
+
+remove the if and make valid = true;
+
+---------------------------------------------------------------------------
+
+line 37 | js\page\subscription.js
+
+change data == success to 1 == 1
+
+---------------------------------------------------------------------------
+
+line 218 | js\page\options.js
+
+change data == success to 1 == 1
+
+---------------------------------------------------------------------------
+
+line 440-441 | js\page\options.js
+
+change these
+
+document.getElementById("subscriptionTier").innerHTML = "RoPro Free" -> "RoPro Rex"
+
+document.getElementById("subscriptionIcon").src = "./images/free_icon.png" -> "./images/rex_icon.png"
+
+---------------------------------------------------------------------------
+
+line 285 - 293 | js\page\profile.js
+
+these lines
+
+	tierName = "Free Tier"
+	icon = chrome.runtime.getURL('/images/free_icon.png')
+	link = "https://ropro.io/"
+	subscriber = false
+	if (tier == "free_tier") {
+		tierName = "RoPro Rex"
+		icon = chrome.runtime.getURL('/images/rex_icon.png')
+		link = "https://ropro.io#rex"
+		subscriber = true
+
+become this
+
+	tierName = "Rex Tier"
+	icon = chrome.runtime.getURL('/images/rex_icon.png')
+	link = "https://ropro.io/#rex"
+	subscriber = true
+	if (tier == "free_tier") {
+		tierName = "RoPro Rex"
+		icon = chrome.runtime.getURL('/images/rex_icon.png')
+		link = "https://ropro.io#rex"
+		subscriber = true
+
+---------------------------------------------------------------------------
+
+line 308-309 | js\page\additionalMenuItems.js
+
+subscriptionPrefix = "free" -> "rex"
+subscriptionName = "RoPro Free" -> "RoPro Rex"
+
+---------------------------------------------------------------------------
