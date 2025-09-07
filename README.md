@@ -4,7 +4,7 @@
 
 ## About
 
-This repository contains the patched source code of the RoPro browser extension, with unlocked features from the **Rex** tier—normally available only via paid subscription (like 7.99 a month). It is provided for **educational and personal use only**.
+This repository contains the patched source code of the RoPro browser extension, with unlocked features from the **Rex** tier normally available only via paid subscription (like 7.99 a month). It is provided for **educational and personal use only**.
 
 All modifications made to the original source have been clearly listed in the `changes.txt` file for full transparency.
 
